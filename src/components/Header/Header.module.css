@@ -1,0 +1,59 @@
+.header {
+  background-color: #ffffff;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: 0 119px;
+  margin-top: 12px;
+}
+
+.info_phone {
+  margin-left: auto;
+}
+
+.phone_number {
+  margin-left: 21px;
+}
+
+.contacts {
+  margin-left: 58px;
+}
+
+.fb {
+  margin-right: 26px;
+}
+
+.russia {
+  margin-left: 66px;
+}
+
+.listButton {
+  margin-left: 14px;
+  background: #fff;
+}
+
+.line {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #55A63080;
+  margin: 9.5px 0 22.5px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 119px;
+}
+
+.navItem {
+}
+
+.df {
+  display: flex;
+}
+
+.ai {
+  align-items: center;
+}
