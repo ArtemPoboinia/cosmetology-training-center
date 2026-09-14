@@ -1,5 +1,7 @@
-import Container from "../Container/Contsiner";
+import Container from "../Container/Container";
+
 import styles from "./Header.module.css";
+
 import logo from "../../assets/logo/logo.svg";
 import phone from "../../assets/icons/phone.svg";
 import fb from "../../assets/icons/fb.svg";
@@ -9,51 +11,86 @@ import listButton from "../../assets/icons/listButton.svg";
 
 function Header() {
   return (
-    <Container>
-      <header className={styles.header}>
+    <header className={styles.header}>
+      <Container>
         <div className={styles.info}>
-          <a href="">
-            <img src={logo} alt="" />
+          <a href="/" className={styles.logo}>
+            <img src={logo} alt="Учебный центр косметологии" />
           </a>
 
-          <div className={`${styles.df} ${styles.info_phone} ${styles.ai}`}>
+          <a href="tel:0800508622" className={styles.infoPhone}>
             <img src={phone} alt="" />
-            <span className={styles.phone_number}>0 (800) 508-622</span>
-          </div>
+            <span className={styles.phoneNumber}>0 (800) 508-622</span>
+          </a>
 
-          <div className={`${styles.df} ${styles.contacts}`}>
-            <a href="" className={styles.fb}>
+          <div className={styles.contacts}>
+            <a href="#" className={styles.fb} aria-label="Facebook">
               <img src={fb} alt="" />
             </a>
 
-            <a href="">
+            <a href="#" aria-label="Instagram">
               <img src={inst} alt="" />
             </a>
           </div>
 
-          <div className={`${styles.df} ${styles.russia}`}>
-            <img src={russia} alt="" />
-            <button className={styles.listButton}>
+          <div className={styles.russia}>
+            <img src={russia} alt="Русский язык" />
+
+            <button
+              type="button"
+              className={styles.listButton}
+              aria-label="Выбрать язык"
+            >
               <img src={listButton} alt="" />
             </button>
           </div>
         </div>
+      </Container>
 
-        <hr className={styles.line}/>
+      <hr className={styles.line} />
 
-        <ul className={styles.nav}>
-          <li className={styles.navItem}>Курсы обучения</li>
-          <li className={styles.navItem}>Вебинары</li>
-          <li className={styles.navItem}>Видео-уроки</li>
-          <li className={styles.navItem}>Блог</li>
-          <li className={styles.navItem}>О нас</li>
-          <li className={styles.navItem}>Прайс</li>
-          <li className={styles.navItem}>Расписание</li>
-          <li className={styles.navItem}>Акции</li>
-          <li className={styles.navItem}>Магазин</li>
-        </ul>
-      </header>
-    </Container>
+      <Container>
+        <nav>
+          <ul className={styles.nav}>
+            <li>
+              <a href="#courses">Курсы обучения</a>
+            </li>
+
+            <li>
+              <a href="#webinars">Вебинары</a>
+            </li>
+
+            <li>
+              <a href="#video-lessons">Видео-уроки</a>
+            </li>
+
+            <li>
+              <a href="#blog">Блог</a>
+            </li>
+
+            <li>
+              <a href="#about">О нас</a>
+            </li>
+
+            <li>
+              <a href="#price">Прайс</a>
+            </li>
+
+            <li>
+              <a href="#schedule">Расписание</a>
+            </li>
+
+            <li>
+              <a href="#offers">Акции</a>
+            </li>
+
+            <li>
+              <a href="#shop">Магазин</a>
+            </li>
+          </ul>
+        </nav>
+      </Container>
+    </header>
   );
 }
 

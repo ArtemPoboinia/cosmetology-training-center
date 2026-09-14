@@ -5,19 +5,26 @@
 .info {
   display: flex;
   align-items: center;
-  margin: 0 119px;
   margin-top: 12px;
 }
 
-.info_phone {
+.logo {
+  display: flex;
+}
+
+.infoPhone {
+  display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
-.phone_number {
+.phoneNumber {
   margin-left: 21px;
 }
 
 .contacts {
+  display: flex;
+  align-items: center;
   margin-left: 58px;
 }
 
@@ -26,34 +33,37 @@
 }
 
 .russia {
+  display: flex;
+  align-items: center;
   margin-left: 66px;
 }
 
 .listButton {
+  display: flex;
+  align-items: center;
   margin-left: 14px;
-  background: #fff;
+  padding: 0;
+  background: transparent;
 }
 
 .line {
   width: 100%;
-  border: none;
-  border-top: 1px solid #55A63080;
-  margin: 9.5px 0 22.5px 0;
+  height: 1px;
+  margin: 9.5px 0 22.5px;
+  border: 0;
+  background-color: #55a63080;
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
-  margin: 0 119px;
-}
-
-.navItem {
-}
-
-.df {
-  display: flex;
-}
-
-.ai {
   align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
 }

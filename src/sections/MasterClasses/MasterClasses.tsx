@@ -1,4 +1,4 @@
-import Container from "../../components/Container/Contsiner";
+import Container from "../../components/Container/Container";
 
 function MasterClasses() {
   return (
