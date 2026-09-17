@@ -9,6 +9,7 @@ import SpecialOffers from "../sections/SpecialOffers/SpecialOffers";
 import TrainingCosmetologists from "../sections/TrainingCosmetologists/TrainingCosmetologists";
 import WhyChooseUs from "../sections/WhyChooseUs/WhyChooseUs";
 import Footer from "../components/Footer/Footer";
+import BlockWithNumbers from "../sections/BlockWithNumbers/BlockWithNumbers";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
 
       <main>
         <Hero />
+        <BlockWithNumbers />
         <Courses />
         <About />
         <TrainingCosmetologists />
